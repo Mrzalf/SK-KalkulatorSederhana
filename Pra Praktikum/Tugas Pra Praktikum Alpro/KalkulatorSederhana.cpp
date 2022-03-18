@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int tambah (int x,int y){
@@ -64,9 +65,9 @@ int main (){
 		cout<<"Hasil Dari "<<x<<" x "<<y<<" = "<<kali(x,y);
 	}
 	else if (pilih == 4){
-		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
-		cout<<"Masukkan Bilangan Kedua : ";cin>> y;
-		cout<<"Hasil Dari "<<a<<" / "<<b<<" = "<<bagi(x,y);
+		cout<<"Masukkan Bilangan Pertama : ";cin>> a;
+		cout<<"Masukkan Bilangan Kedua : ";cin>> b;
+		cout<<"Hasil Dari "<<a<<" / "<<b<<" = "<<bagi(a,b);
 	}
 	else if (pilih == 5){
 		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
