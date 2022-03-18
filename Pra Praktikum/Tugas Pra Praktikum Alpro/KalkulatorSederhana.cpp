@@ -26,6 +26,15 @@ int mod (int x,int y){
 	hasil=x%y;
 	return hasil;
 }
+int pangkat (int x, int y){
+	int hasil;
+	hasil=pow(x,y);
+	return hasil;
+}
+int akar (int x){
+	int hasil;
+	hasil=sqrt(x); 
+}
 int main (){
 	int x,y,pilih;
 	float a,b;
@@ -36,6 +45,8 @@ int main (){
 	cout<<" \n3. Perkalian ";
 	cout<<" \n4. Pembagian ";
 	cout<<" \n5. modulus ";
+	cout<<" \n6. Perpangkatan ";
+	cout<<" \n7. Akar Pangkat ";
 	cout<<"\nPilih Menu No : "; cin>>pilih;
 	if (pilih == 1){
 		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
@@ -53,14 +64,23 @@ int main (){
 		cout<<"Hasil Dari "<<x<<" x "<<y<<" = "<<kali(x,y);
 	}
 	else if (pilih == 4){
-		cout<<"Masukkan Bilangan Pertama : ";cin>> a;
-		cout<<"Masukkan Bilangan Kedua : ";cin>> b;
-		cout<<"Hasil Dari "<<a<<" / "<<b<<" = "<<bagi(a,b);
+		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
+		cout<<"Masukkan Bilangan Kedua : ";cin>> y;
+		cout<<"Hasil Dari "<<a<<" / "<<b<<" = "<<bagi(x,y);
 	}
 	else if (pilih == 5){
 		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
 		cout<<"Masukkan Bilangan Kedua : ";cin>> y;
-		cout<<"Hasil Dari "<<x<<" % "<<y<<" = "<<mod(a,b);
+		cout<<"Hasil Dari "<<x<<" % "<<y<<" = "<<mod(x,y);
+	}
+	else if (pilih == 6){
+		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
+		cout<<"Masukkan Bilangan Kedua : ";cin>> y;
+		cout<<"Hasil Dari "<<x<<" pangkat "<<y<<" = "<<pangkat(x,y);
+	}
+	else if (pilih == 7){
+		cout<<"Masukkan Bilangan : ";cin>> x;
+		cout<<"Hasil dari Akar "<<x<<" = " << akar(x);
 	}
 	else {
 		cout<<"Pilihan Tidak Tersedia";
