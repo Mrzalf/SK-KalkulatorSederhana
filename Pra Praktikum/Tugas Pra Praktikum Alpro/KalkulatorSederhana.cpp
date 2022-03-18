@@ -35,6 +35,7 @@ int main (){
 	cout<<" \n2. Pengurangan ";
 	cout<<" \n3. Perkalian ";
 	cout<<" \n4. Pembagian ";
+	cout<<" \n5. modulus ";
 	cout<<"\nPilih Menu No : "; cin>>pilih;
 	if (pilih == 1){
 		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
