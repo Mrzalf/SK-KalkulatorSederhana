@@ -21,6 +21,11 @@ float bagi (float x,float y){
 	hasil=x/y;
 	return hasil;
 }
+int mod (int x,int y){
+	int hasil;
+	hasil=x%y;
+	return hasil;
+}
 int main (){
 	int x,y,pilih;
 	float a,b;
@@ -49,7 +54,12 @@ int main (){
 	else if (pilih == 4){
 		cout<<"Masukkan Bilangan Pertama : ";cin>> a;
 		cout<<"Masukkan Bilangan Kedua : ";cin>> b;
-		cout<<"Hasil Dari "<<a<<" + "<<b<<" = "<<bagi(a,b);
+		cout<<"Hasil Dari "<<a<<" / "<<b<<" = "<<bagi(a,b);
+	}
+	else if (pilih == 5){
+		cout<<"Masukkan Bilangan Pertama : ";cin>> x;
+		cout<<"Masukkan Bilangan Kedua : ";cin>> y;
+		cout<<"Hasil Dari "<<x<<" % "<<y<<" = "<<mod(a,b);
 	}
 	else {
 		cout<<"Pilihan Tidak Tersedia";
